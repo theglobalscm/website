@@ -1,0 +1,67 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for the app */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6; /* Light gray background */
+  color: #333; /* Dark gray text */
+}
+
+/* Common section padding and margin */
+section {
+  padding: 4rem 0; /* Vertical padding for sections */
+}
+
+/* Card styling */
+.card {
+  border-radius: 0.75rem; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Section title styling */
+.section-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #3b82f6; /* Blue underline */
+  border-radius: 2px;
+}
+
+/* Responsive table styling */
+.overflow-x-auto {
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+
+/* Ensure images fit within their containers */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Utility for list circles */
+.list-circle {
+  list-style-type: circle;
+}
+

@@ -1,0 +1,15 @@
+# Log files 
+npm-debug.log* 
+*.log 
+.npm/ 
+.node_repl_history 
+# Dependency directories 
+node_modules/ 
+# Build artifacts 
+build/ 
+dist/ 
+# Firebase config 
+.env 
+# OS generated files 
+.DS_Store 
+Thumbs.db 
