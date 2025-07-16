@@ -13,3 +13,5 @@ dist/
 # OS generated files 
 .DS_Store 
 Thumbs.db 
+# Firebase Service Account Key
+firestore-data-script/
